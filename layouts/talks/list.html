@@ -2,29 +2,46 @@
 {{ partial "navbar.html" . }}
 <div class="self-center w-full sm:w-2/3 xl:w-1/2 px-20 sm:px-8 flex flex-col mt-6">
     <div class="self-center">
-        {{ $talks := (where .Site.RegularPages "Section" "talks")}}
-        {{ $upcoming_talks := (sort (where $talks ".Params.talk_date" "ge" now) ".Params.talk_date") }}
-        {{ $past_talks := (sort (where $talks ".Params.talk_date" "lt" now) ".Params.talk_date").Reverse }}
+        {{ $talks1 := (sort (site.GetPage "talks/session1").Pages ".Params.talk_date") }}
+        {{ $talks2 := (sort (site.GetPage "talks/session2").Pages ".Params.talk_date") }}
+        {{ $talks3 := (sort (site.GetPage "talks/session3").Pages ".Params.talk_date") }}
 
         <div class="mb-12">
-            <h2 class="tracking-wide text-pink-600 font-bold text-4xl mb-4">Upcoming Talks</h2>
-            {{ range $upcoming_talks}}
-            <div class="mb-6">
+            <h2 class="tracking-wide text-pink-600 font-bold text-3xl mb-2">Architectures and Optimization</h2>
+            {{ range $talks1 }}
+            <div class="mb-4">
                 <a class="text-2xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
-                <h6 class="font-bold text-lg">{{ .Params.presenter }}</h6>
-                {{ .Params.talk_date.Format "Mon, 2. Jan 2006, 15:04"}}
+                <h6 class="font-bold text-lg">{{ .Params.presenter }} ({{.Params.organization}}), {{ .Params.talk_date.Format "Mon 15:04"}}</h6>
             </div>
             {{ end }}
         </div>
+
         <div class="mb-12">
-            <h2 class="tracking-wide text-pink-600 font-bold text-4xl mb-4">Past Talks</h2>
-            {{ range $past_talks }}
-            <div class="mb-6">
+            <h2 class="tracking-wide text-pink-600 font-bold text-3xl mb-2">Multi-geometry wavefunctions</h2>
+            {{ range $talks2}}
+            <div class="mb-4">
                 <a class="text-2xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
-                <h6 class="font-bold text-lg">{{ .Params.presenter }}</h6>
-                {{ .Params.talk_date.Format "Mon, 2. Jan 2006, 15:04"}}
+                <h6 class="font-bold text-lg">{{ .Params.presenter }} ({{.Params.organization}}), {{ .Params.talk_date.Format "Mon 15:04"}}</h6>
             </div>
-            {{ end}}
+            {{ end }}
+        </div>
+
+        <div class="mb-12">
+            <h2 class="tracking-wide text-gray-900 font-bold text-3xl mb-2">Conference Dinner</h2>
+            <div class="mb-4">
+                <a class="text-2xl hover:underline" href="{{ .Permalink }}">Heuriger XYZ</a>
+                <h6 class="font-bold text-lg">Adresse, 19:00</h6>
+            </div>
+        </div>
+
+        <div class="mb-12">
+            <h2 class="tracking-wide text-pink-600 font-bold text-3xl mb-2">Periodic Systems</h2>
+            {{ range $talks3}}
+            <div class="mb-4">
+                <a class="text-2xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
+                <h6 class="font-bold text-lg">{{ .Params.presenter }} ({{.Params.organization}}), {{ .Params.talk_date.Format "Mon 15:04"}}</h6>
+            </div>
+            {{ end }}
         </div>
     </div>
 </div>
