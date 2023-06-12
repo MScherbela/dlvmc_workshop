@@ -1,5 +1,5 @@
 # SETUP
-baseURL = "https://dl-seminar.scherbela.com"
+baseURL = "https://dlvmc.mds.mat.univie.ac.at"
 relativeURLs = true
 DefaultContentLanguage = "en"
 publishdir = "public"
@@ -16,6 +16,5 @@ unsafe= true
     email = "michael.scherbela@gmail.com"
 
 [params]
-    description = "Landing page for the Deep Learning seminar and reading group at University of Vienna"
-    images = [] #add images here as "img/name.ext" (points to s./static/img/) to populate the default og and twitter <meta> attributes -> see ./layouts/partials/head.html
+    description = "Webpage for the mini-symposium on deep-learning-based Variational Monte Carlo, at University of Vienna from July 3-4 2023"
 
