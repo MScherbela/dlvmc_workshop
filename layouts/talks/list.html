@@ -35,7 +35,7 @@
             {{ range $talks2}}
             <div class="mb-4">
                 {{ if eq .Params.is_break 1}}
-                    <h6 class="text-xl italic">Coffee break</h6>
+                    <p class="text-xl italic">Coffee break</p>
                     <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
                 {{ else }}
                     <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
