@@ -8,7 +8,14 @@
         {{ $talks3 := (sort (where $talks ".Params.session" 3) ".Params.start_time") }}
 
         <div class="mb-6">
-            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Architectures and Optimization</h2>
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Arrival and Coffee</h2>
+            <div class="mb-4">
+                <h6 class="font-bold text-md">Mon, 8:30 - 9:00</h6>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 1: Architectures and Optimization</h2>
             {{ range $talks1 }}
             <div class="mb-4">
                 <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
@@ -19,7 +26,7 @@
         </div>
 
         <div class="mb-6">
-            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Multi-geometry wavefunctions</h2>
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 2: Multi-geometry wavefunctions</h2>
             {{ range $talks2}}
             <div class="mb-4">
                 <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
@@ -30,7 +37,7 @@
         </div>
 
         <div class="mb-6">
-            <h2 class="tracking-wide text-gray-900 font-bold text-2xl mb-2">Poster Session</h2>
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Poster Session</h2>
             <div class="mb-4">
                 <h6 class="text-xl">Informal poster session and time for discussions</a>
                 <h6 class="font-bold text-md">Mon, 16:00 - 18:00</h6>
@@ -38,7 +45,7 @@
         </div>
 
         <div class="mb-6">
-            <h2 class="tracking-wide text-gray-900 font-bold text-2xl mb-2">Conference Dinner</h2>
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Conference Dinner</h2>
             <div class="mb-4">
                 <a class="text-md hover:underline" href="{{ .Permalink }}">TBD</a>
                 <h6 class="font-bold text-md">Mon, 19:00</h6>
@@ -46,7 +53,14 @@
         </div>
 
         <div class="mb-6">
-            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Applications and Periodic Systems</h2>
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Arrival and Coffee</h2>
+            <div class="mb-4">
+                <h6 class="font-bold text-md">Tue, 8:30 - 9:00</h6>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 3: Applications and Periodic Systems</h2>
             {{ range $talks3}}
             <div class="mb-4">
                 <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
