@@ -5,6 +5,7 @@ affiliation = "FU Berlin"
 start_time = 2023-07-03T09:00:00+00:00
 end_time = 2023-07-03T09:45:00+00:00
 session = 1
+is_break = 0
 +++
 
 

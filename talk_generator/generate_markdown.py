@@ -9,6 +9,7 @@ affiliation = "{affiliation}"
 start_time = {time_start:%Y-%m-%dT%H:%M:%S+00:00}
 end_time = {time_end:%Y-%m-%dT%H:%M:%S+00:00}
 session = {session}
+is_break = {is_break}
 +++
 
 {abstract}

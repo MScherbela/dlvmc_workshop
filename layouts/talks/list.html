@@ -18,9 +18,14 @@
             <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 1: Architectures and Optimization</h2>
             {{ range $talks1 }}
             <div class="mb-4">
-                <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
-                <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
-                <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ if eq .Params.is_break 1}}
+                    <h6 class="text-xl italic">Coffee break</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ else }}
+                    <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ end }}
             </div>
             {{ end }}
         </div>
@@ -29,9 +34,14 @@
             <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 2: Multi-geometry wavefunctions</h2>
             {{ range $talks2}}
             <div class="mb-4">
-                <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
-                <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
-                <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ if eq .Params.is_break 1}}
+                    <h6 class="text-xl italic">Coffee break</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ else }}
+                    <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ end }}
             </div>
             {{ end }}
         </div>
@@ -40,7 +50,7 @@
             <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Poster Session</h2>
             <div class="mb-4">
                 <h6 class="text-xl">Informal poster session and time for discussions</a>
-                <h6 class="font-bold text-md">Mon, 16:00 - 18:00</h6>
+                <h6 class="font-bold text-md">Mon, 16:30 - 18:00</h6>
             </div>
         </div>
 
@@ -63,9 +73,14 @@
             <h2 class="tracking-wide text-pink-600 font-bold text-2xl mb-2">Session 3: Applications and Periodic Systems</h2>
             {{ range $talks3}}
             <div class="mb-4">
-                <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
-                <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
-                <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ if eq .Params.is_break 1}}
+                    <h6 class="text-xl italic">Coffee break</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ else }}
+                    <a class="text-xl hover:underline" href="{{ .Permalink }}">{{ .Title }}</a>
+                    <h6 class="font-bold text-md">{{ .Params.presenter }}, {{.Params.affiliation}}</h6>
+                    <h6 class="text-md">{{ .Params.start_time.Format "Mon, 15:04"}} - {{ .Params.end_time.Format "15:04"}}</h6>
+                {{ end }}
             </div>
             {{ end }}
         </div>
