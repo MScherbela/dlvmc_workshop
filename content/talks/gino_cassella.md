@@ -2,8 +2,8 @@
 title = "Optimization challenges with FermiNet"
 presenter = "Gino Cassella"
 affiliation = "Imperial College London"
-start_time = 2023-07-03T09:45:00+00:00
-end_time = 2023-07-03T10:30:00+00:00
+start_time = 2023-07-03T09:55:00+00:00
+end_time = 2023-07-03T10:40:00+00:00
 session = 1
 is_break = 0
 +++

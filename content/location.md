@@ -3,6 +3,7 @@ title: "Workshop location: Alte Kapelle"
 ---
 
 The workshop will be held at the old chapel "Alte Kapelle" ([Google Maps](https://goo.gl/maps/WksSkh371xJrU7hH6)).
+If you have trouble getting there, reach out to Michael at [+436643639750](tel:+436643639750).
 
 To get there, enter the University Campus from Alser Straße 2-4 and walk straight through court 1 (Hof 1) to the very end.
 There in the arched passage you will find the entrance to the chapel (Alte Kapelle), which is located on the first floor.
